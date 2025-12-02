@@ -4057,3 +4057,46 @@ input, select, textarea {
     font-size: 0.9rem;
     color: #333;
 }
+
+
+/* Lightbox overlay */
+.lightbox {
+    display: none;                /* hidden by default */
+    position: fixed;
+    inset: 0;                     /* shorthand for top/right/bottom/left */
+    z-index: 9999;
+    background: rgba(0,0,0,0.85);
+    display: flex;                /* when shown, use flex layout */
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Full-size image inside lightbox */
+.lightbox-content {
+    max-width: min(90vw, 1200px);
+    max-height: 85vh;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Caption (optional) */
+.lightbox-caption {
+    margin-top: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+/* Close button */
+.lightbox .close {
+    position: absolute;
+    top: 1rem;
+    right: 1.25rem;
+    font-size: 2rem;
+    line-height: 1;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+
