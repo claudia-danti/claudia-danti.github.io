@@ -4030,12 +4030,17 @@ input, select, textarea {
     transform: translateY(-5px);
 }
 
-/* Responsive photo grid */
+
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
     margin-top: 2rem;
+}
+
+.photo-grid figure {
+    margin: 0;
+    text-align: center;
 }
 
 .photo-grid img {
@@ -4044,6 +4049,11 @@ input, select, textarea {
     border-radius: 8px;
     object-fit: cover;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    cursor: pointer; /* for lightbox */
 }
 
-
+.photo-grid figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #333;
+}
