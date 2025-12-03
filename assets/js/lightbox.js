@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const lightboxImg = document.getElementById('lightbox-img');
     const closeBtn = document.querySelector('.close');
 
-    if (!lightbox) return;
+    if (!lightbox) return; // safety check
 
     // Thumbnail click
     document.querySelectorAll('.photo-grid img').forEach(img => {
         img.addEventListener('click', () => {
             lightboxImg.src = img.src;
-            lightbox.style.display = 'flex'; // IMPORTANT: flex, not block
+            lightbox.style.display = 'flex';   // IMPORTANT: use flex so image is centered
         });
     });
 
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         lightbox.style.display = 'none';
     });
 
-    // Click outside image closes lightbox
+    // Close if clicking outside the image
     lightbox.addEventListener('click', (e) => {
         if (e.target === lightbox) {
             lightbox.style.display = 'none';
