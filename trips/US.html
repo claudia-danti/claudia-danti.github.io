@@ -21,31 +21,33 @@
         </header>
 
         <!-- Trip Section -->
-<section class="wrapper style3 special">
-    <div class="inner">
-        <header class="major">
-            <h2>USA</h2>
-            <p>Some shots from US south-west national parks</p>
-        </header>
+        <section class="wrapper style3 special">
+            <div class="inner">
+                <header class="major">
+                    <h2>USA</h2>
+                    <p>Some shots from US south-west national parks</p>
+                </header>
 
-        <div class="photo-grid">
-            <img src="../images/usa_1.jpeg" alt="usa 1" class="thumbnail">
-            <img src="../images/usa_2.jpeg" alt="usa 2" class="thumbnail">
-            <img src="../images/usa_3.jpeg" alt="usa 3" class="thumbnail">
-        </div>
+                <!-- Your photo grid -->
+                <div class="photo-grid">
+                    <img src="../images/usa_1.jpeg" alt="usa 1">
+                    <img src="../images/usa_2.jpeg" alt="usa 2">
+                    <img src="../images/usa_3.jpeg" alt="usa 3">
+                </div>
 
-        <a href="../index.html#photogallery" class="button primary" style="margin-top:2rem;">Back to Gallery</a>
-    </div>
-</section>
-
-<!-- Lightbox -->
-<div id="lightbox" class="lightbox">
-    <span class="close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img">
-</div>
+                <a href="../index.html#photogallery" class="button primary" style="margin-top:2rem;">Back to Gallery</a>
+            </div>
+        </section>
 
     </div>
 
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" class="lightbox-content">
+    </div>
+
+    <!-- Template scripts -->
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/jquery.scrollex.min.js"></script>
     <script src="../assets/js/jquery.scrolly.min.js"></script>
@@ -53,5 +55,9 @@
     <script src="../assets/js/breakpoints.min.js"></script>
     <script src="../assets/js/util.js"></script>
     <script src="../assets/js/main.js"></script>
+
+    <!-- IMPORTANT: load lightbox.js LAST -->
+    <script src="../assets/js/lightbox.js"></script>
+
 </body>
 </html>
