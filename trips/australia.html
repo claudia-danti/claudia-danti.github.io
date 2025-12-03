@@ -28,18 +28,33 @@
                     <p>Some shots from Australia</p>
                 </header>
 
-                <div class="trip-gallery-grid">
-                    <img src="../images/trip_australia_1.jpeg" alt="Australia 1">
-                    <img src="../images/trip_australia_2.jpeg" alt="Australia 2">
-                    <img src="../images/trip_australia_3.jpeg" alt="Australia 3">
+            
+                <!-- Your photo grid -->
+                <div class="photo-grid">
+                    <img src="../images/australia_1.jpeg" alt="aus 1">
+                    <img src="../images/australia_2.jpeg" alt="aus 2">
+                    <img src="../images/australia_3.jpeg" alt="aus 3">
                 </div>
 
-                <a href="../index.html" class="button primary" style="margin-top:2rem;">Back to Gallery</a>
+                <a href="../index.html#photogallery" class="button primary" style="margin-top:2rem;">Back to Gallery</a>
             </div>
         </section>
 
     </div>
 
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+
+    <span class="prev arrow">&#10094;</span>
+    <span class="next arrow">&#10095;</span>
+
+    <img id="lightbox-img" class="lightbox-content">
+</div>
+
+
+
+    <!-- Template scripts -->
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/jquery.scrollex.min.js"></script>
     <script src="../assets/js/jquery.scrolly.min.js"></script>
@@ -47,5 +62,9 @@
     <script src="../assets/js/breakpoints.min.js"></script>
     <script src="../assets/js/util.js"></script>
     <script src="../assets/js/main.js"></script>
+
+    <!-- IMPORTANT: load lightbox.js LAST -->
+    <script src="../assets/js/lightbox.js"></script>
+
 </body>
 </html>
