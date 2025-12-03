@@ -26,33 +26,23 @@ document.addEventListener('DOMContentLoaded', () => {
         lightbox.style.display = 'none';
     });
 
-    // Click outside closes
+    // Clicking outside closes
     lightbox.addEventListener('click', (e) => {
         if (e.target === lightbox) {
             lightbox.style.display = 'none';
         }
     });
 
-    // Show next image
+    // Navigation
     nextBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         currentIndex = (currentIndex + 1) % images.length;
         lightboxImg.src = images[currentIndex].src;
     });
 
-    // Show previous image
     prevBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         currentIndex = (currentIndex - 1 + images.length) % images.length;
         lightboxImg.src = images[currentIndex].src;
-    });
-
-    // Keyboard support
-    document.addEventListener('keydown', (e) => {
-        if (lightbox.style.display === 'flex') {
-            if (e.key === 'ArrowRight') nextBtn.click();
-            if (e.key === 'ArrowLeft') prevBtn.click();
-            if (e.key === 'Escape') closeBtn.click();
-        }
     });
 });
