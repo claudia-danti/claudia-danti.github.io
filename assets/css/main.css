@@ -4118,4 +4118,30 @@ input, select, textarea {
     opacity: 0.7 !important;
 }
 
+/* Make the photo grid images fill container and remove extra white space */
+.photo-grid img {
+    display: block;        /* removes inline-block spacing */
+    width: 100%;           /* fills container width */
+    height: auto;
+    margin: 0;             /* remove default spacing */
+}
+
+/* Position the USA label over the first image */
+.photo-grid-container {
+    position: relative;
+    display: inline-block;
+}
+
+.photo-grid-container h2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 2rem;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 10;
+}
+
 
