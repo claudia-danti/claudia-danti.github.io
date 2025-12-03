@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <title>Australia</title>
+    <title>New Zealand</title>
     <link rel="stylesheet" href="../assets/css/main.css" />
 </head>
 <body class="landing is-preload">
@@ -25,21 +25,36 @@
             <div class="inner">
                 <header class="major">
                     <h2>New Zealand</h2>
-                    <p>Some shots from New Zealand</p>
+                    <p>Some shots from the north island of New Zealand</p>
                 </header>
 
-                <div class="trip-gallery-grid">
-                    <img src="../images/nz_1.jpeg" alt="New Zealand 1">
-                    <img src="../images/nz_2.jpeg" alt="New Zealand 2">
-                    <img src="../images/nz_3.jpeg" alt="New Zealand 3">
+            
+                <!-- Your photo grid -->
+                <div class="photo-grid">
+                    <img src="../images/nz_1.jpeg" alt="nz 1">
+                    <img src="../images/nz_2.jpeg" alt="nz 2">
+                    <img src="../images/nz_3.jpeg" alt="nz 3">
                 </div>
 
-                <a href="../index.html" class="button primary" style="margin-top:2rem;">Back to Gallery</a>
+                <a href="../index.html#photogallery" class="button primary" style="margin-top:2rem;">Back to Gallery</a>
             </div>
         </section>
 
     </div>
 
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+
+    <span class="prev arrow">&#10094;</span>
+    <span class="next arrow">&#10095;</span>
+
+    <img id="lightbox-img" class="lightbox-content">
+</div>
+
+
+
+    <!-- Template scripts -->
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/jquery.scrollex.min.js"></script>
     <script src="../assets/js/jquery.scrolly.min.js"></script>
@@ -47,5 +62,9 @@
     <script src="../assets/js/breakpoints.min.js"></script>
     <script src="../assets/js/util.js"></script>
     <script src="../assets/js/main.js"></script>
+
+    <!-- IMPORTANT: load lightbox.js LAST -->
+    <script src="../assets/js/lightbox.js"></script>
+
 </body>
 </html>
