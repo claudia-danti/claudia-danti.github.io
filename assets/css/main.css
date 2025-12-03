@@ -4080,23 +4080,44 @@ input, select, textarea {
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
-/* Caption (optional) */
-.lightbox-caption {
-    margin-top: 1rem;
-    color: #fff;
-    text-align: center;
-    font-size: 0.95rem;
+
+
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
 }
 
-/* Close button */
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 4px;
+}
+
 .lightbox .close {
     position: absolute;
-    top: 1rem;
-    right: 1.25rem;
-    font-size: 2rem;
-    line-height: 1;
-    color: #fff;
+    top: 20px;
+    right: 35px;
+    font-size: 40px;
     cursor: pointer;
-    user-select: none;
+    color: white;
 }
+
+.photo-grid img {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.photo-grid img:hover {
+    opacity: 0.8;
+}
+
 
