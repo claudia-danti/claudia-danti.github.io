@@ -4092,28 +4092,30 @@ input, select, textarea {
     pointer-events: none !important;
 }
 
-/* Lightbox arrows */
-.prev, .next {
-    color: white;
-    font-size: 50px;
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    user-select: none;
-    padding: 10px;
+/* Lightbox navigation arrows */
+.arrow {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    font-size: 60px !important;
+    color: white !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+    z-index: 20000 !important;
+    user-select: none !important;
+    padding: 20px !important;
 }
 
 .prev {
-    left: 30px;
+    left: 20px !important;
 }
 
 .next {
-    right: 30px;
+    right: 20px !important;
 }
 
-.prev:hover, .next:hover {
-    opacity: 0.7;
+.arrow:hover {
+    opacity: 0.7 !important;
 }
+
 
