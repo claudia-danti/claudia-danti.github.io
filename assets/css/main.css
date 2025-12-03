@@ -4085,3 +4085,10 @@ input, select, textarea {
     cursor: pointer;
     font-weight: bold;
 }
+
+
+.wrapper:before,
+.wrapper:after {
+    pointer-events: none !important;
+}
+
