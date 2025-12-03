@@ -4092,3 +4092,28 @@ input, select, textarea {
     pointer-events: none !important;
 }
 
+/* Lightbox arrows */
+.prev, .next {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;
+}
+
+.prev {
+    left: 30px;
+}
+
+.next {
+    right: 30px;
+}
+
+.prev:hover, .next:hover {
+    opacity: 0.7;
+}
+
