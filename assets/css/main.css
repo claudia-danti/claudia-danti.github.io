@@ -3631,7 +3631,7 @@ input, select, textarea {
 
 		#banner p {
 			letter-spacing: 0.225em;
-			text-transform: uppercase;
+			text-transform: none;
 		}
 
 			#banner p a {
